@@ -1,6 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import authContainer from "./views/authContainer.vue";
+</script>
 
-<template></template>
+<template>
+	<authContainer>
+		<router-view></router-view>
+	</authContainer>
+</template>
 
-<style scoped>
-</style>
+<style scoped></style>
