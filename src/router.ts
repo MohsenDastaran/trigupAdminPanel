@@ -5,10 +5,16 @@ import forgotPassword from "./views/forgotPassword.vue";
 import emailPassword from "./views/emailPassword.vue";
 import mobilePassword from "./views/mobilePassword.vue";
 import createPassword from "./views/createPassword.vue";
+import dashboard from "./views/dashboard.vue";
 const routes = [
 	{
 		path: "/",
 		redirect: "login",
+	},
+	{
+		path: "/dashboard",
+		name: "dashboard",
+		component: dashboard,
 	},
 	{
 		path: "/login",

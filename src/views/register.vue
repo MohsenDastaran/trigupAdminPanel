@@ -108,7 +108,7 @@ const strengthState = ref({ value: "Too weak" });
 const onKeyup = (model: { password: string }) => {
 	strengthState.value = passwordStrength(model.password);
 };
-const onSubmit = (model: string[]) => console.log(model);
+const onSubmit = (model: string[]) => router.push("/dashboard");
 </script>
 <style scoped>
 .register-btn {

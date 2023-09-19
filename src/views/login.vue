@@ -52,12 +52,13 @@
 
 <script setup lang="ts">
 import createForm from "../components/form.vue";
+import router from "../router";
 
 const inputs = [
 	{ name: "email", placeholder: "موبایل / ایمیل", rtl: true },
 	{ name: "pass", placeholder: "رمز عبور", rtl: true },
 ];
-const onSubmit = (model: string[]) => console.log(model);
+const onSubmit = (model: string[]) =>  router.push("/dashboard");
 </script>
 <style scoped>
 .login-btn {

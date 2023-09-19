@@ -54,3 +54,26 @@
 	direction: rtl;
 text-align: right;
 } */
+.vs-sidebar--background {
+	display: none;
+}
+.vs-sidebar--items {
+	height: 100vh;
+	background-color: #3C4AAE !important;
+	overflow: hidden;
+	color: aliceblue !important;
+
+}
+.vs-sidebar--item a {
+	direction: rtl;
+	
+}
+.vs-sidebar--item > a > i {
+	font-size: 30px !important;
+}
+.vs-sidebar--item > a {
+	font-size: 20px !important;
+}
+.vuesax-app-is-ltr .vs-sidebar--item i.material-icons {
+	margin: 0 10px;
+}
