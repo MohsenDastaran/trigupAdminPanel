@@ -24,3 +24,33 @@
 .vs-button--icon {
 	margin: 0 10px !important
 }
+.router-link-wrapper {
+	translate: -60px;
+}
+.router-link-wrapper p {
+	margin: 0 10px;
+	direction: rtl;
+}
+.icon-no-border {
+	left: -140px !important
+}
+
+.progress {
+	width: 350px !important;
+	translate: -75px -10px;
+	margin: 10px 0;
+	direction: rtl;
+}
+/* .vs-checkbox--icon {
+    font-size: initial !important;
+}
+.vs-checkbox {
+	border-radius: 50px !important
+}
+.vs-checkbox--input {
+	pointer-events: none;
+}
+.vs-checkbox-default {
+	direction: rtl;
+text-align: right;
+} */

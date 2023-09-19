@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "check-password-strength": "^2.0.7",
     "material-icons": "^1.13.11",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",

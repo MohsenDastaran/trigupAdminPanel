@@ -1,4 +1,13 @@
 <template>
+	<vs-button
+		v-if="route.name !== 'login'"
+		to="/login"
+		class="back-btn"
+		type="flat"
+		icon="navigate_next"
+	>
+		بازگشت
+	</vs-button>
 	<vs-row style="height: 100vh">
 		<vs-col
 			vs-type="flex"
@@ -34,5 +43,12 @@ const route = useRoute();
 .vs-image--img {
 	background-repeat: no-repeat;
 	background-position: unset !important;
+}
+.back-btn {
+	position: absolute !important;
+	top: 60px;
+	right: -50px;
+	direction: rtl;
+	width: unset !important;
 }
 </style>

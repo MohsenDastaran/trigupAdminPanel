@@ -1,10 +1,15 @@
 <template>
 	<h2 style="margin-bottom: 20px">ورود به پنل</h2>
-	<createForm :inputs="inputs" buttonText="ورود به پنل" />
+	<createForm @submit="onSubmit" :inputs="inputs" buttonText="ورود به پنل" />
 	<vs-button to="/forgotPassword" class="login-btn" type="flat" icon="key">
 		فراموشی رمز عبور
 	</vs-button>
-	<vs-button class="login-btn" type="border" icon="phone_android">
+	<vs-button
+		class="login-btn"
+		type="border"
+		icon="phone_android"
+		to="/mobilePassword"
+	>
 		ورود با کد یکبار مصرف
 	</vs-button>
 	<vs-button class="login-btn" style="margin-top: 0" type="border">
@@ -52,6 +57,7 @@ const inputs = [
 	{ name: "email", placeholder: "موبایل / ایمیل", rtl: true },
 	{ name: "pass", placeholder: "رمز عبور", rtl: true },
 ];
+const onSubmit = (model: string[]) => console.log(model);
 </script>
 <style scoped>
 .login-btn {
@@ -61,12 +67,5 @@ const inputs = [
 .login-btn svg {
 	translate: 40px -1px;
 	position: absolute;
-}
-.router-link-wrapper {
-	translate: -60px;
-}
-.router-link-wrapper p {
-	margin: 0 10px;
-	direction: rtl;
 }
 </style>
