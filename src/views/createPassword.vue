@@ -9,8 +9,7 @@ import loginVue from './login.vue';
 			class="progress"
 			:percent="states[strengthState.value].percent"
 			:color="states[strengthState.value].color"
-			>primary</vs-progress
-		>
+		></vs-progress>
 		<p
 			style="width: 350px; margin-bottom: 10px"
 			:style="`color: rgb(${states[strengthState.value].rgb})`"
@@ -43,9 +42,6 @@ const inputs = [
 		rtl: true,
 	},
 ];
-
-const percent = ref();
-const color = ref(true);
 const states = {
 	"Too weak": {
 		translation: "خیلی ضعیف",

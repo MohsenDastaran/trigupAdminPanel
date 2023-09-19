@@ -1,7 +1,9 @@
 <template>
 	<vs-input
 		v-for="input in inputs"
-		:style="`direction: ${input.rtl ? 'rtl' : 'ltr'}; margin-bottom: 30px`"
+		:style="`direction: ${input.rtl ? 'rtl' : 'ltr'}; translate: ${
+			input.rtl ? '0' : '-150px'
+		}; `"
 		class="inputx"
 		:placeholder="input.placeholder"
 		:label="input.label"
@@ -63,6 +65,7 @@ input.vs-inputx {
 	border: 0 !important;
 	padding: 10px 20px !important;
 	width: 350px !important;
+	margin-bottom: 30px !important;
 }
 button {
 	width: 350px !important;

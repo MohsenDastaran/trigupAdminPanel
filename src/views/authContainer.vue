@@ -1,7 +1,7 @@
 <template>
 	<vs-button
-		v-if="route.name !== 'login'"
-		to="/login"
+		v-if="route.name !== 'login' && route.name !== 'register'"
+		@click="router.go(-1)"
 		class="back-btn"
 		type="flat"
 		icon="navigate_next"
@@ -35,6 +35,7 @@
 
 <script setup lang="ts">
 import { useRoute } from "vue-router";
+import router from "../router";
 
 const route = useRoute();
 </script>

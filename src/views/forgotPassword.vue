@@ -17,7 +17,6 @@ const inputs = [
 	},
 ];
 const onSubmit = (model: string[]) => {
-	console.log(model);
 	if (validateEmail(model.emailOrMobile)) router.push("/emailPassword");
 	else if (validateMobile(model.emailOrMobile)) router.push("/mobilePassword");
 };
