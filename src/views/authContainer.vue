@@ -19,7 +19,7 @@
 			>
 				<vs-image
 					style="width: 100%; height: 100%; translate: 50px 50px"
-					:src="`src/assets/${route.name}.svg`"
+					:src="`${route.name}.svg`"
 				/>
 			</vs-col>
 			<vs-col
